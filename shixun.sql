@@ -10,7 +10,7 @@ CREATE TABLE `t_book` (
   `publisher` 	  VARCHAR(110) NOT NULL,
   `publishtime`   VARCHAR(110) NOT NULL,
   `ISBN`          INT(20) NOT NULL,
-  PRIMARY KEY (`borrowID`)
+  PRIMARY KEY (`number`)
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8mb4 COMMENT='用户';
 
 INSERT  INTO `t_album`(`number`,`title`,`author`,`publisher`,`publishtime`,`ISBN`
