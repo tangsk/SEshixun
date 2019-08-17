@@ -1,8 +1,9 @@
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`shixun` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+CREATE DATABASE `shixun` 
 
-USE `shixun`;
+USE  `shixun`;
 /*Table structure for table `t_book` */
 DROP TABLE IF EXISTS `t_book`;
+
 CREATE TABLE `t_book` (
   `number`        INT(12) NOT NULL AUTO_INCREMENT ,
   `title`         VARCHAR(110) NOT NULL,
