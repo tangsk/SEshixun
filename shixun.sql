@@ -14,8 +14,6 @@ CREATE  TABLE IF NOT EXISTS t_book (
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8mb4 COMMENT='用户';
 
 
-
-
 /*Table structure for table `t_borrow` */
 
 CREATE TABLE IF NOT EXISTS t_borrow (
@@ -25,8 +23,8 @@ CREATE TABLE IF NOT EXISTS t_borrow (
   `author`        VARCHAR(110) NOT NULL,
   `uid`           INT(12) NOT NULL  ,
   `name`          VARCHAR(20) NOT NULL,
-  `time`          INT(11) NOT NULL,
-  `srtime`        INT(11) NOT NULL,
+  `time`          INT(14) NOT NULL,
+  `srtime`        INT(14) NOT NULL,
   PRIMARY KEY (`borrowID`)
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8mb4 COMMENT='用户';
 
@@ -42,6 +40,4 @@ CREATE TABLE IF NOT EXISTS t_user (
   PRIMARY KEY (`uid`)
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8mb4 COMMENT='用户';
 
-
-
-
+INSERT  INTO `t_book`(`number`,`title`,`author`,`publisher`,`publishtime`,`ISBN`)  VALUES (12345678,'theroom','tangsk','scut','2019818',484180184104);
