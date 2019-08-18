@@ -2,7 +2,7 @@ CREATE DATABASE `shixun`
 
 USE  `shixun`;
 /*Table structure for table `t_book` */
-DROP TABLE IF EXISTS `t_book`;
+DROP TABLE IF EXISTS t_book;
 
 CREATE TABLE `t_book` (
   `number`        INT(12) NOT NULL AUTO_INCREMENT ,
@@ -18,7 +18,7 @@ INSERT  INTO `t_album`(`number`,`title`,`author`,`publisher`,`publishtime`,`ISBN
 
 
 /*Table structure for table `t_borrow` */
-DROP TABLE IF EXISTS `t_borrow`;
+DROP TABLE IF EXISTS t_borrow;
 
 CREATE TABLE `t_borrow` (
   `borrowID`      INT(12) NOT NULL AUTO_INCREMENT ,
@@ -31,7 +31,7 @@ CREATE TABLE `t_borrow` (
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8mb4 COMMENT='用户';
 
 /*Table structure for table `t_user` */
-DROP TABLE IF EXISTS `t_user`;
+DROP TABLE IF EXISTS t_user;
 
 CREATE TABLE `t_user` (
   `uid`           INT(12) NOT NULL AUTO_INCREMENT ,
