@@ -9,7 +9,7 @@ CREATE  TABLE IF NOT EXISTS t_book (
   `author`        VARCHAR(110) NOT NULL,
   `publisher` 	  VARCHAR(110) NOT NULL,
   `publishtime`   VARCHAR(110) NOT NULL,
-  `ISBN`          VARCHAR(13)  NOT NULL,
+
   PRIMARY KEY (`number`)
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8mb4 COMMENT='用户';
 
@@ -40,4 +40,4 @@ CREATE TABLE IF NOT EXISTS t_user (
   PRIMARY KEY (`uid`)
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8mb4 COMMENT='用户';
 
-INSERT  INTO `t_book`(`number`,`title`,`author`,`publisher`,`publishtime`,`ISBN`)  VALUES (12345678,'theroom','tangsk','scut','20190818','1234567890123');
+INSERT  INTO `t_book`(`number`,`title`,`author`,`publisher`,`publishtime`)  VALUES (12345678,'theroom','tangsk','scut','20190818');
