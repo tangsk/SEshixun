@@ -1,10 +1,9 @@
-CREATE DATABASE `shixun` 
+CREATE DATABASE IF NOT EXISTS shixun;
+USE shixun;
 
-USE  `shixun`;
 /*Table structure for table `t_book` */
-DROP TABLE IF EXISTS t_book;
 
-CREATE TABLE `t_book` (
+CREATE  TABLE IF NOT EXISTS t_book (
   `number`        INT(12) NOT NULL AUTO_INCREMENT ,
   `title`         VARCHAR(110) NOT NULL,
   `author`        VARCHAR(110) NOT NULL,
@@ -14,26 +13,26 @@ CREATE TABLE `t_book` (
   PRIMARY KEY (`number`)
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8mb4 COMMENT='用户';
 
-INSERT  INTO `t_album`(`number`,`title`,`author`,`publisher`,`publishtime`,`ISBN`
+
 
 
 /*Table structure for table `t_borrow` */
-DROP TABLE IF EXISTS t_borrow;
 
-CREATE TABLE `t_borrow` (
+CREATE TABLE IF NOT EXISTS t_borrow (
   `borrowID`      INT(12) NOT NULL AUTO_INCREMENT ,
   `number`        INT(30) NOT NULL ,
   `title`         VARCHAR(110) NOT NULL,
   `author`        VARCHAR(110) NOT NULL,
   `uid`           INT(12) NOT NULL  ,
+  `name`          VARCHAR(20) NOT NULL,
   `time`          INT(11) NOT NULL,
+  `srtime`        INT(11) NOT NULL,
   PRIMARY KEY (`borrowID`)
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8mb4 COMMENT='用户';
 
 /*Table structure for table `t_user` */
-DROP TABLE IF EXISTS t_user;
 
-CREATE TABLE `t_user` (
+CREATE TABLE IF NOT EXISTS t_user (
   `uid`           INT(12) NOT NULL AUTO_INCREMENT ,
   `password`      VARCHAR(110) NOT NULL,
   `name`          VARCHAR(20) NOT NULL,
