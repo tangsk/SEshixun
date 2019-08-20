@@ -28,8 +28,7 @@ public class book {
     private String publishtime;
     @Column(name = "descri")
     private String descri;
-    @Transient
-    private List<Subalbum> subalbums;
+
 
     public book(String title, String author, String publisher, String publishtime, String descri) {
         this.title = title;
