@@ -35,8 +35,7 @@ public class borrow {
     private user user;
     @Transient
     private book book;
-    @Transient
-    private Subalbum subalbum;
+
 
     public borrow(int borrowID, int number, String title, String author,String uid,String name, String time,String srttime) {
         this.borrowID = borrowID;
