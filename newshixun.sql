@@ -35,7 +35,6 @@ CREATE TABLE IF NOT EXISTS t_reader (
   `account` VARCHAR(110) NOT NULL,
   `password` VARCHAR(110) NOT NULL,
   `name` VARCHAR(110) NOT NULL,
-  `sex` VARCHAR(11) NOT NULL,
   `time` VARCHAR(110) NOT NULL,
   `condi` INT(11) NOT NULL ,
   `feedback` VARCHAR(140) NOT NULL,
