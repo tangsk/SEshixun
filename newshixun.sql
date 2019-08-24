@@ -9,6 +9,7 @@ CREATE  TABLE IF NOT EXISTS t_album(
   `publisher` VARCHAR(110) NOT NULL,
   `publishtime` VARCHAR(110) NOT NULL,
   `num` INT(11) NOT NULL,
+  `descri` VARCHAR NOT NULL,
   `time` VARCHAR(110) NOT NULL,
   PRIMARY KEY (`aid`)
 ) ENGINE=INNODB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4;
@@ -37,7 +38,7 @@ CREATE TABLE IF NOT EXISTS t_reader (
   `name` VARCHAR(110) NOT NULL,
   `time` VARCHAR(110) NOT NULL,
   `condi` INT(11) NOT NULL ,
-  `feedback` VARCHAR(140) NOT NULL,
+  `feedback` VARCHAR(140)  ,
   `EMailAddr`VARCHAR(40),
   `phoneNumber`VARCHAR(15),
   PRIMARY KEY (`rid`)
